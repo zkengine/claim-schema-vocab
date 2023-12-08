@@ -1,0 +1,29 @@
+{
+  "@context": [
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "id": "@id",
+      "type": "@type",
+      "ChequeCredential": {
+        "@id": "https://raw.githubusercontent.com/zkengine/claim-schema-vocab/main/schemas/json-ld/vericheq.json-ld#ChequeCredential",
+        "@context": {
+          "@version": 1.1,
+          "@protected": true,
+          "id": "@id",
+          "type": "@type",
+          "kyc-vocab": "https://github.com/iden3/claim-schema-vocab/blob/main/credentials/kyc.md#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "amount": {
+            "@id": "kyc-vocab:birthday",
+            "@type": "xsd:integer"
+          },
+          "requestId": {
+            "@id": "kyc-vocab:documentType",
+            "@type": "xsd:integer"
+          }
+        }
+      }
+    }
+  ]
+}
